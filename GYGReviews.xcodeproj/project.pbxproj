@@ -7,23 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D25AD15128E73AB66B4CD80 /* Pods_GYGReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379DBA54411CF8273133A10B /* Pods_GYGReviews.framework */; };
 		C393E00F1CF89A2D00A8B517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E00E1CF89A2D00A8B517 /* AppDelegate.swift */; };
-		C393E0111CF89A2D00A8B517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0101CF89A2D00A8B517 /* ViewController.swift */; };
 		C393E0141CF89A2D00A8B517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393E0121CF89A2D00A8B517 /* Main.storyboard */; };
 		C393E0171CF89A2D00A8B517 /* GYGReviews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C393E0151CF89A2D00A8B517 /* GYGReviews.xcdatamodeld */; };
 		C393E0191CF89A2D00A8B517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C393E0181CF89A2D00A8B517 /* Assets.xcassets */; };
 		C393E01C1CF89A2D00A8B517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393E01A1CF89A2D00A8B517 /* LaunchScreen.storyboard */; };
+		C393E02C1CF89D8C00A8B517 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */; };
+		C393E02E1CF89DDC00A8B517 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */; };
+		C393E0311CF8A09000A8B517 /* Review+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */; };
+		C393E0321CF8A09000A8B517 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0301CF8A09000A8B517 /* Review.swift */; };
+		C393E0341CF8A30D00A8B517 /* ReviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0331CF8A30D00A8B517 /* ReviewStore.swift */; };
+		C393E0371CF8BA9600A8B517 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0361CF8BA9600A8B517 /* Encodable.swift */; };
+		C393E0391CF8C14400A8B517 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0381CF8C14400A8B517 /* Extensions.swift */; };
+		C393E03B1CF8CBAF00A8B517 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */; };
+		C393E03D1CF8CC2000A8B517 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E03C1CF8CC2000A8B517 /* Changeset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		379DBA54411CF8273133A10B /* Pods_GYGReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYGReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE23355CB9CD769F291DBAF6 /* Pods-GYGReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGReviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYGReviews/Pods-GYGReviews.debug.xcconfig"; sourceTree = "<group>"; };
 		C393E00B1CF89A2D00A8B517 /* GYGReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYGReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C393E00E1CF89A2D00A8B517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C393E0101CF89A2D00A8B517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C393E0131CF89A2D00A8B517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C393E0161CF89A2D00A8B517 /* GYGReviews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GYGReviews.xcdatamodel; sourceTree = "<group>"; };
 		C393E0181CF89A2D00A8B517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C393E01B1CF89A2D00A8B517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C393E01D1CF89A2D00A8B517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C393E0301CF8A09000A8B517 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		C393E0331CF8A30D00A8B517 /* ReviewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewStore.swift; sourceTree = "<group>"; };
+		C393E0351CF8AAF900A8B517 /* GYGReviews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GYGReviews-Bridging-Header.h"; path = "GYGReviews/GYGReviews-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C393E0361CF8BA9600A8B517 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		C393E0381CF8C14400A8B517 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
+		C393E03C1CF8CC2000A8B517 /* Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Changeset.swift; sourceTree = "<group>"; };
+		DCF571F2F14D0620A7A71933 /* Pods-GYGReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGReviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYGReviews/Pods-GYGReviews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D25AD15128E73AB66B4CD80 /* Pods_GYGReviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C48695C76E09AD468498D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379DBA54411CF8273133A10B /* Pods_GYGReviews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C393E0021CF89A2D00A8B517 = {
 			isa = PBXGroup;
 			children = (
 				C393E00D1CF89A2D00A8B517 /* GYGReviews */,
 				C393E00C1CF89A2D00A8B517 /* Products */,
+				E58B66F9082BF3928BDA35B9 /* Pods */,
+				9C48695C76E09AD468498D1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +89,72 @@
 			isa = PBXGroup;
 			children = (
 				C393E00E1CF89A2D00A8B517 /* AppDelegate.swift */,
-				C393E0101CF89A2D00A8B517 /* ViewController.swift */,
 				C393E0121CF89A2D00A8B517 /* Main.storyboard */,
 				C393E0181CF89A2D00A8B517 /* Assets.xcassets */,
+				C393E0261CF89D8C00A8B517 /* Helpers */,
+				C393E0271CF89D8C00A8B517 /* Models */,
+				C393E0281CF89D8C00A8B517 /* Stores */,
+				C393E0291CF89D8C00A8B517 /* ViewModels */,
+				C393E02A1CF89D8C00A8B517 /* Views */,
 				C393E01A1CF89A2D00A8B517 /* LaunchScreen.storyboard */,
 				C393E01D1CF89A2D00A8B517 /* Info.plist */,
 				C393E0151CF89A2D00A8B517 /* GYGReviews.xcdatamodeld */,
+				C393E0351CF8AAF900A8B517 /* GYGReviews-Bridging-Header.h */,
 			);
 			path = GYGReviews;
+			sourceTree = "<group>";
+		};
+		C393E0261CF89D8C00A8B517 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */,
+				C393E0381CF8C14400A8B517 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C393E0271CF89D8C00A8B517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */,
+				C393E0301CF8A09000A8B517 /* Review.swift */,
+				C393E0361CF8BA9600A8B517 /* Encodable.swift */,
+				C393E03C1CF8CC2000A8B517 /* Changeset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C393E0281CF89D8C00A8B517 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C393E0331CF8A30D00A8B517 /* ReviewStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		C393E0291CF89D8C00A8B517 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C393E02A1CF89D8C00A8B517 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E58B66F9082BF3928BDA35B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE23355CB9CD769F291DBAF6 /* Pods-GYGReviews.debug.xcconfig */,
+				DCF571F2F14D0620A7A71933 /* Pods-GYGReviews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C393E0201CF89A2D00A8B517 /* Build configuration list for PBXNativeTarget "GYGReviews" */;
 			buildPhases = (
+				2E76C2936BF33629DFDC7118 /* 📦 Check Pods Manifest.lock */,
 				C393E0071CF89A2D00A8B517 /* Sources */,
 				C393E0081CF89A2D00A8B517 /* Frameworks */,
 				C393E0091CF89A2D00A8B517 /* Resources */,
+				1F8F578676209D3BE8E53618 /* 📦 Embed Pods Frameworks */,
+				09BEDDBDE2329940341553BE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +226,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09BEDDBDE2329940341553BE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYGReviews/Pods-GYGReviews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F8F578676209D3BE8E53618 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYGReviews/Pods-GYGReviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E76C2936BF33629DFDC7118 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C393E0071CF89A2D00A8B517 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C393E0111CF89A2D00A8B517 /* ViewController.swift in Sources */,
 				C393E00F1CF89A2D00A8B517 /* AppDelegate.swift in Sources */,
+				C393E0391CF8C14400A8B517 /* Extensions.swift in Sources */,
+				C393E03D1CF8CC2000A8B517 /* Changeset.swift in Sources */,
+				C393E03B1CF8CBAF00A8B517 /* ReviewsViewModel.swift in Sources */,
+				C393E0341CF8A30D00A8B517 /* ReviewStore.swift in Sources */,
+				C393E02C1CF89D8C00A8B517 /* ReviewsViewController.swift in Sources */,
+				C393E02E1CF89DDC00A8B517 /* CoreDataHelper.swift in Sources */,
+				C393E0311CF8A09000A8B517 /* Review+CoreDataProperties.swift in Sources */,
 				C393E0171CF89A2D00A8B517 /* GYGReviews.xcdatamodeld in Sources */,
+				C393E0321CF8A09000A8B517 /* Review.swift in Sources */,
+				C393E0371CF8BA9600A8B517 /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,23 +400,27 @@
 		};
 		C393E0211CF89A2D00A8B517 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE23355CB9CD769F291DBAF6 /* Pods-GYGReviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GYGReviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vgdub.GYGReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GYGReviews/GYGReviews-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		C393E0221CF89A2D00A8B517 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF571F2F14D0620A7A71933 /* Pods-GYGReviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GYGReviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vgdub.GYGReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GYGReviews/GYGReviews-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -290,6 +443,7 @@
 				C393E0221CF89A2D00A8B517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
