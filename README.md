@@ -91,4 +91,7 @@ What else would I have done with more time?
 
 - Filtering - I would have added this to the reviews list, but time didn't permit enough time to think about handling it properly.
 
+- Better implementation of MockStore for use in app, as well as with tests for testing ReviewStore implementation/api
+
+
 
