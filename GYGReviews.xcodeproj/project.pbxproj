@@ -14,14 +14,16 @@
 		C393E0191CF89A2D00A8B517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C393E0181CF89A2D00A8B517 /* Assets.xcassets */; };
 		C393E01C1CF89A2D00A8B517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393E01A1CF89A2D00A8B517 /* LaunchScreen.storyboard */; };
 		C393E02C1CF89D8C00A8B517 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */; };
-		C393E02E1CF89DDC00A8B517 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */; };
-		C393E0311CF8A09000A8B517 /* Review+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */; };
 		C393E0321CF8A09000A8B517 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0301CF8A09000A8B517 /* Review.swift */; };
 		C393E0341CF8A30D00A8B517 /* ReviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0331CF8A30D00A8B517 /* ReviewStore.swift */; };
 		C393E0371CF8BA9600A8B517 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0361CF8BA9600A8B517 /* Encodable.swift */; };
 		C393E0391CF8C14400A8B517 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0381CF8C14400A8B517 /* Extensions.swift */; };
 		C393E03B1CF8CBAF00A8B517 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */; };
 		C393E03D1CF8CC2000A8B517 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E03C1CF8CC2000A8B517 /* Changeset.swift */; };
+		C393E03F1CF98E6500A8B517 /* AddReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E03E1CF98E6500A8B517 /* AddReviewViewModel.swift */; };
+		C393E0411CF9950B00A8B517 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0401CF9950B00A8B517 /* AddReviewViewController.swift */; };
+		C393E0451CF9D58800A8B517 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0441CF9D58800A8B517 /* ReviewCell.swift */; };
+		C393E0471CF9F04300A8B517 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393E0461CF9F04200A8B517 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,6 @@
 		C393E01B1CF89A2D00A8B517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C393E01D1CF89A2D00A8B517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
-		C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C393E0301CF8A09000A8B517 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		C393E0331CF8A30D00A8B517 /* ReviewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewStore.swift; sourceTree = "<group>"; };
 		C393E0351CF8AAF900A8B517 /* GYGReviews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GYGReviews-Bridging-Header.h"; path = "GYGReviews/GYGReviews-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -44,6 +44,10 @@
 		C393E0381CF8C14400A8B517 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
 		C393E03C1CF8CC2000A8B517 /* Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Changeset.swift; sourceTree = "<group>"; };
+		C393E03E1CF98E6500A8B517 /* AddReviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewViewModel.swift; sourceTree = "<group>"; };
+		C393E0401CF9950B00A8B517 /* AddReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		C393E0441CF9D58800A8B517 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		C393E0461CF9F04200A8B517 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DCF571F2F14D0620A7A71933 /* Pods-GYGReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYGReviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYGReviews/Pods-GYGReviews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +111,8 @@
 		C393E0261CF89D8C00A8B517 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C393E02D1CF89DDC00A8B517 /* CoreDataHelper.swift */,
 				C393E0381CF8C14400A8B517 /* Extensions.swift */,
+				C393E0461CF9F04200A8B517 /* Reachability.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -116,7 +120,6 @@
 		C393E0271CF89D8C00A8B517 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C393E02F1CF8A09000A8B517 /* Review+CoreDataProperties.swift */,
 				C393E0301CF8A09000A8B517 /* Review.swift */,
 				C393E0361CF8BA9600A8B517 /* Encodable.swift */,
 				C393E03C1CF8CC2000A8B517 /* Changeset.swift */,
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C393E03A1CF8CBAF00A8B517 /* ReviewsViewModel.swift */,
+				C393E03E1CF98E6500A8B517 /* AddReviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				C393E02B1CF89D8C00A8B517 /* ReviewsViewController.swift */,
+				C393E0401CF9950B00A8B517 /* AddReviewViewController.swift */,
+				C393E0441CF9D58800A8B517 /* ReviewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,17 +285,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C393E03F1CF98E6500A8B517 /* AddReviewViewModel.swift in Sources */,
 				C393E00F1CF89A2D00A8B517 /* AppDelegate.swift in Sources */,
 				C393E0391CF8C14400A8B517 /* Extensions.swift in Sources */,
 				C393E03D1CF8CC2000A8B517 /* Changeset.swift in Sources */,
 				C393E03B1CF8CBAF00A8B517 /* ReviewsViewModel.swift in Sources */,
+				C393E0451CF9D58800A8B517 /* ReviewCell.swift in Sources */,
 				C393E0341CF8A30D00A8B517 /* ReviewStore.swift in Sources */,
 				C393E02C1CF89D8C00A8B517 /* ReviewsViewController.swift in Sources */,
-				C393E02E1CF89DDC00A8B517 /* CoreDataHelper.swift in Sources */,
-				C393E0311CF8A09000A8B517 /* Review+CoreDataProperties.swift in Sources */,
+				C393E0411CF9950B00A8B517 /* AddReviewViewController.swift in Sources */,
 				C393E0171CF89A2D00A8B517 /* GYGReviews.xcdatamodeld in Sources */,
 				C393E0321CF8A09000A8B517 /* Review.swift in Sources */,
 				C393E0371CF8BA9600A8B517 /* Encodable.swift in Sources */,
+				C393E0471CF9F04300A8B517 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

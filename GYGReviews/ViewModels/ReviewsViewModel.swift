@@ -60,7 +60,7 @@ class ReviewsViewModel {
         refreshSignal
             .on(next: { _ in isLoading.value = true })
             .flatMap(.Latest) { _ in
-                return store.fetchRemoteReviews()
+                return store.fetchReviews()
                     .flatMapError { error in
                         alertMessageObserver.sendNext(error.localizedDescription)
                         return SignalProducer(value: [])
@@ -98,6 +98,26 @@ extension ReviewsViewModel {
     func reviewTitleAtIndexPath(indextPath: NSIndexPath) -> String {
         let review = reviewAtIndexPath(indextPath)
         return review.title!
+    }
+    
+    func reviewDateAtIndexPath(indexPath: NSIndexPath) -> String {
+        let review = reviewAtIndexPath(indexPath)
+        return review.date!
+    }
+    
+    func reviewMessageAtIndexPath(indexPath: NSIndexPath) -> String {
+        let review = reviewAtIndexPath(indexPath)
+        return review.message!
+    }
+    
+    func reviewRatingAtIndexPath(indexPath: NSIndexPath) -> String {
+        let review = reviewAtIndexPath(indexPath)
+        return review.rating!
+    }
+    
+    func reviewAuthorAtIndexPath(indexPath: NSIndexPath) -> String {
+        let review = reviewAtIndexPath(indexPath)
+        return review.author!
     }
 }
 

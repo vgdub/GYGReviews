@@ -20,11 +20,6 @@ class ReviewsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     // MARK: - Lifecycle
     
-    init(viewModel: ReviewsViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         let store = ReviewStore()
         self.viewModel = ReviewsViewModel(store: store)
@@ -35,11 +30,14 @@ class ReviewsViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         
         tableView.allowsSelection = false
-        tableView.rowHeight = 60
+        tableView.estimatedRowHeight = 60.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView() // Prevent empty rows at bottom
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.registerClass(ReviewCell.self, forCellReuseIdentifier: reviewCellIdentifier)
         
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self,
@@ -105,7 +103,7 @@ extension ReviewsViewController {
                     preferredStyle: .Alert
                 )
                 alertController.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
-                self?.presentViewController(alertController, animated: true, completion: nil)
+                    self?.presentViewController(alertController, animated: true, completion: nil)
                 })
     }
 }
@@ -116,7 +114,9 @@ extension ReviewsViewController {
     
     
     func addReviewButtonTapped() {
-        print("tapped add button")
+        let addReviewViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AddReview") as! AddReviewViewController
+        let navController = UINavigationController(rootViewController: addReviewViewController)
+        self.presentViewController(navController, animated: true, completion: nil)
     }
     
     func refreshControlTriggered() {
@@ -136,9 +136,13 @@ extension ReviewsViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(reviewCellIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(reviewCellIdentifier, forIndexPath: indexPath) as! ReviewCell
         
-        cell.textLabel?.text = viewModel.reviewTitleAtIndexPath(indexPath)
+        cell.titleLabel?.text = viewModel.reviewTitleAtIndexPath(indexPath)
+        cell.dateLabel?.text = viewModel.reviewDateAtIndexPath(indexPath)
+        cell.authorLabel?.text = viewModel.reviewAuthorAtIndexPath(indexPath)
+        cell.bodyLabel?.text  = viewModel.reviewMessageAtIndexPath(indexPath)
+        cell.ratingLabel?.text = viewModel.reviewRatingAtIndexPath(indexPath)
         
         return cell
     }

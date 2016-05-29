@@ -42,6 +42,13 @@ extension Array {
 import enum Result.NoError
 public typealias NoError = Result.NoError
 
+extension UIStepper {
+    func signalProducer() -> SignalProducer<Int, NoError> {
+        return self.rac_newValueChannelWithNilValue(0).toSignalProducer()
+            .map { $0 as! Int }
+            .flatMapError { _ in return SignalProducer<Int, NoError>.empty }
+    }
+}
 
 extension UITextField {
     func signalProducer() -> SignalProducer<String, NoError> {
